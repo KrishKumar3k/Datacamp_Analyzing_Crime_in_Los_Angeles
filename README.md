@@ -1,46 +1,71 @@
-# Datacamp_Analyzing_Crime_in_Los_Angeles
+# 📊 Analyzing Crime in Los Angeles (DataCamp Project)
 
-Los Angeles, California 😎. The City of Angels. Tinseltown. The Entertainment Capital of the World!
+## 🚔 Project Overview
 
-Known for its warm weather, palm trees, sprawling coastline, and Hollywood, along with producing some of the most iconic films and songs. However, as with any highly populated city, it isn't always glamorous and there can be a large volume of crime. That's where you can help!
+This project analyzes crime data from Los Angeles to identify patterns in criminal activity. The goal is to help the LAPD understand when and where crimes are most frequent so that resources can be allocated more effectively.
 
-You have been asked to support the Los Angeles Police Department (LAPD) by analyzing crime data to identify patterns in criminal behavior. They plan to use your insights to allocate resources effectively to tackle various crimes in different areas.
+Los Angeles, known as the **City of Angels**, faces a high volume of crime due to its large population. This analysis focuses on uncovering insights from real-world crime data.
 
-The Data
-They have provided you with a single dataset to use. A summary and preview are provided below.
+---
 
-It is a modified version of the original data, which is publicly available from Los Angeles Open Data.
+## 📁 Dataset
 
-crimes.csv
-Column	Description
-'DR_NO'	Division of Records Number: Official file number made up of a 2-digit year, area ID, and 5 digits.
-'Date Rptd'	Date reported - MM/DD/YYYY.
-'DATE OCC'	Date of occurrence - MM/DD/YYYY.
-'TIME OCC'	In 24-hour military time.
-'AREA NAME'	The 21 Geographic Areas or Patrol Divisions are also given a name designation that references a landmark or the surrounding community that it is responsible for. For example, the 77th Street Division is located at the intersection of South Broadway and 77th Street, serving neighborhoods in South Los Angeles.
-'Crm Cd Desc'	Indicates the crime committed.
-'Vict Age'	Victim's age in years.
-'Vict Sex'	Victim's sex: F: Female, M: Male, X: Unknown.
-'Vict Descent'	Victim's descent:
-A - Other Asian
-B - Black
-C - Chinese
-D - Cambodian
-F - Filipino
-G - Guamanian
-H - Hispanic/Latin/Mexican
-I - American Indian/Alaskan Native
-J - Japanese
-K - Korean
-L - Laotian
-O - Other
-P - Pacific Islander
-S - Samoan
-U - Hawaiian
-V - Vietnamese
-W - White
-X - Unknown
-Z - Asian Indian
-'Weapon Desc'	Description of the weapon used (if applicable).
-'Status Desc'	Crime status.
-'LOCATION'	Street address of the crime.
+The dataset is a modified version of publicly available Los Angeles crime data.
+
+Key columns include:
+
+* `TIME OCC` → Time of occurrence (24-hour format)
+* `AREA NAME` → Police patrol division area
+* `Vict Age` → Age of the victim
+* `Crm Cd Desc` → Crime description
+* `Vict Sex` → Gender of victim
+* `LOCATION` → Crime location
+
+---
+
+## 🎯 Objectives
+
+The project answers the following key questions:
+
+1. ⏰ What hour of the day has the highest frequency of crimes?
+2. 🌙 Which area has the most night crimes (10 PM – 3:59 AM)?
+3. 👥 How are crimes distributed across different victim age groups?
+
+---
+
+## 🛠️ Tools & Libraries Used
+
+* Python 🐍
+* Pandas 📊
+* NumPy 🔢
+
+---
+
+## 📌 Key Steps
+
+* Data cleaning and type conversion
+* Feature engineering (extracting hours from time)
+* Filtering night-time crime data
+* Grouping and aggregation using `value_counts()`
+* Binning ages using `pd.cut()`
+
+---
+
+## 📈 Key Insights
+
+* Certain hours of the day show significantly higher crime activity.
+* Specific areas experience more crime during night hours.
+* Victim age distribution highlights the most affected age groups.
+
+---
+
+## 🚀 Conclusion
+
+This project demonstrates how exploratory data analysis (EDA) can reveal meaningful patterns in crime data, helping support better decision-making in public safety.
+
+---
+
+## 👨‍💻 Author
+
+Krish Kumar
+Aspiring Data Scientist | AI & ML Enthusiast
