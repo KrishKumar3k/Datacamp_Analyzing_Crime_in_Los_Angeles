@@ -1,6 +1,4 @@
 # Datacamp_Analyzing_Crime_in_Los_Angeles
-Modified by Krish Kumar, 3 min ago
-Los Angeles skyline
 
 Los Angeles, California 😎. The City of Angels. Tinseltown. The Entertainment Capital of the World!
 
